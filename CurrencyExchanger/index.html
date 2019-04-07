@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<meta charset="UTF-8"/>
+<title> Currency converter </title> 
+</head>
+
+<html>
+
+<body style="background-color:LightSteelBlue;">
+<span class="border border-dark">
+
+    <!--- CONTAINER START -->
+    <div class="container" style="background-color:White;"> 
+        
+        <div class="row" style="background-color:Gainsboro;">
+            <div class="col" align="center">
+                <h1> Currency converter </h1>
+            </div>
+        </div>
+    
+        <div class="row">
+            <button class="btn btn-primary btn-block" id="HOME"> <h1> HOME </h1> </button> 
+        </div>
+        
+        <div class="row align-items-center">
+            <div class="col" align="center">
+                <div class="btn-group" role="group">
+                	<button class="btn btn-secondary" id="API"> <h1> API </h1> </button>
+                	<button class="btn btn-secondary" id="FILE"> <h1> File </h1> </button>
+                	<button class="btn btn-secondary" id="RAND"> <h1> Rand </h1> </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border border-light mx-auto">
+            <div class="mt-4">
+            <div class="row align-items-end">
+                <div class="col" align="center" >
+                    <div id="spinner" class="spinner-border text-primary" role="status" style="display:none;">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    
+                    <div id="focus_area"> Select the desired tab </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="row">
+                <div id="AVAIL_CURRENCY" class="col" align="right">
+                    <p>Available currency will be displayed here</p>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!--- CONTAINER END -->
+</span>
+<script src="./javascript/index-func.js"></script>
+
+</body>
+</html>

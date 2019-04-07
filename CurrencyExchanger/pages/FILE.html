@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<html>
+    <body>
+    <div class="container">
+    
+    <h1> File processing </h1>
+    
+    <div class="row align-items-end">
+        <div class="col" align="center">
+        <input id="FILE_INPUT" type="file" enctype="multipart/form-data" class="btn btn-warning" />
+	    </div>
+	</div>    
+	
+	<div class="mt-2">
+	<div id="converterArea" style="display: none;">
+    <form>
+        <div class="form-row">
+            <div class="col-3">
+            </div>
+            
+            <div class="col-1">
+                <select id="TYPES" step="0,01" class="form-control">
+                <option>None</option>   
+                </select>
+            </div>
+            
+            <div class="col-3">
+                <input id="INPUT" type="number" required class="form-control">
+            </div>
+            <div class="col-2">    
+                <div id="RESULT" style="display:inline;"></div>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+    </form>
+    </div>
+    </div>
+    
+    <div class="mt-5">
+    <div class="row">
+        <div class="col" align="center">
+           <div class="border border-dark" style="background-color:Gainsboro;">
+               <p>Currently supported JSON in the format Object = "key1":value1, "key2":value2... </p>
+               <p> For Example: {"USD":20,"EUR":25} </p>
+               <span style="color:red;">Avoid blank spaces!</span>
+            </div>
+        </div>
+    </div>
+    </div>
+	</div>
+	</body>
+</html>
